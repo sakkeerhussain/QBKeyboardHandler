@@ -77,4 +77,15 @@
     [[self.view window] endEditing:YES];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    
+    if (textField.returnKeyType == UIReturnKeyNext) {
+        //make next view first responder
+        //[next-text-field becomeFirstResponder];
+    }
+    
+    return YES;
+}
+
 @end
