@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QBBaseViewController : UIViewController
+@interface QBBaseViewController : UIViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomMarginConstraint;
 
