@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		33BD8FBF1C801A3C0072E45A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD8FBE1C801A3C0072E45A /* main.m */; };
 		33BD8FC21C801A3C0072E45A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD8FC11C801A3C0072E45A /* AppDelegate.m */; };
-		33BD8FC51C801A3C0072E45A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD8FC41C801A3C0072E45A /* ViewController.m */; };
 		33BD8FC81C801A3C0072E45A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BD8FC61C801A3C0072E45A /* Main.storyboard */; };
 		33BD8FCA1C801A3C0072E45A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33BD8FC91C801A3C0072E45A /* Assets.xcassets */; };
 		33BD8FCD1C801A3C0072E45A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BD8FCB1C801A3C0072E45A /* LaunchScreen.storyboard */; };
 		33BD8FD81C801A3C0072E45A /* KeyBoardHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD8FD71C801A3C0072E45A /* KeyBoardHandlerTests.m */; };
 		33BD8FE31C801A3C0072E45A /* KeyBoardHandlerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD8FE21C801A3C0072E45A /* KeyBoardHandlerUITests.m */; };
+		33BD8FFA1C802EFD0072E45A /* QBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD8FF81C802EFD0072E45A /* QBBaseViewController.m */; settings = {ASSET_TAGS = (); }; };
+		33BD8FFF1C802F490072E45A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD8FFB1C802F490072E45A /* ViewController2.m */; settings = {ASSET_TAGS = (); }; };
+		33BD90001C802F490072E45A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD8FFD1C802F490072E45A /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		33BD8FBE1C801A3C0072E45A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33BD8FC01C801A3C0072E45A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33BD8FC11C801A3C0072E45A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		33BD8FC31C801A3C0072E45A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		33BD8FC41C801A3C0072E45A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		33BD8FC71C801A3C0072E45A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33BD8FC91C801A3C0072E45A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33BD8FCC1C801A3C0072E45A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		33BD8FDE1C801A3C0072E45A /* KeyBoardHandlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyBoardHandlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33BD8FE21C801A3C0072E45A /* KeyBoardHandlerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyBoardHandlerUITests.m; sourceTree = "<group>"; };
 		33BD8FE41C801A3C0072E45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33BD8FF81C802EFD0072E45A /* QBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QBBaseViewController.m; path = ViewControllers/BaseViewController/QBBaseViewController.m; sourceTree = "<group>"; };
+		33BD8FF91C802EFD0072E45A /* QBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBBaseViewController.h; path = ViewControllers/BaseViewController/QBBaseViewController.h; sourceTree = "<group>"; };
+		33BD8FFB1C802F490072E45A /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController2.m; path = ViewControllers/ViewController2.m; sourceTree = "<group>"; };
+		33BD8FFC1C802F490072E45A /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController2.h; path = ViewControllers/ViewController2.h; sourceTree = "<group>"; };
+		33BD8FFD1C802F490072E45A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewControllers/ViewController.m; sourceTree = "<group>"; };
+		33BD8FFE1C802F490072E45A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewControllers/ViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,9 @@
 		33BD8FBC1C801A3C0072E45A /* KeyBoardHandler */ = {
 			isa = PBXGroup;
 			children = (
+				33BD8FF01C801B990072E45A /* ViewControllers */,
 				33BD8FC01C801A3C0072E45A /* AppDelegate.h */,
 				33BD8FC11C801A3C0072E45A /* AppDelegate.m */,
-				33BD8FC31C801A3C0072E45A /* ViewController.h */,
-				33BD8FC41C801A3C0072E45A /* ViewController.m */,
 				33BD8FC61C801A3C0072E45A /* Main.storyboard */,
 				33BD8FC91C801A3C0072E45A /* Assets.xcassets */,
 				33BD8FCB1C801A3C0072E45A /* LaunchScreen.storyboard */,
@@ -138,6 +143,27 @@
 				33BD8FE41C801A3C0072E45A /* Info.plist */,
 			);
 			path = KeyBoardHandlerUITests;
+			sourceTree = "<group>";
+		};
+		33BD8FF01C801B990072E45A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33BD8FFB1C802F490072E45A /* ViewController2.m */,
+				33BD8FFC1C802F490072E45A /* ViewController2.h */,
+				33BD8FFD1C802F490072E45A /* ViewController.m */,
+				33BD8FFE1C802F490072E45A /* ViewController.h */,
+				33BD8FF71C802EC30072E45A /* BaseViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		33BD8FF71C802EC30072E45A /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				33BD8FF81C802EFD0072E45A /* QBBaseViewController.m */,
+				33BD8FF91C802EFD0072E45A /* QBBaseViewController.h */,
+			);
+			name = BaseViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33BD8FC51C801A3C0072E45A /* ViewController.m in Sources */,
 				33BD8FC21C801A3C0072E45A /* AppDelegate.m in Sources */,
+				33BD8FFF1C802F490072E45A /* ViewController2.m in Sources */,
+				33BD8FFA1C802EFD0072E45A /* QBBaseViewController.m in Sources */,
 				33BD8FBF1C801A3C0072E45A /* main.m in Sources */,
+				33BD90001C802F490072E45A /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
