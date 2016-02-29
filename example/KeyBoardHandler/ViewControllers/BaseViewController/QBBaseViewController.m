@@ -11,6 +11,7 @@
 @interface QBBaseViewController ()
 
 @property (strong, nonatomic) UITapGestureRecognizer * tapRecognizer;
+@property (strong, nonatomic) NSArray* allTextFields;
 
 @end
 
@@ -81,11 +82,38 @@
     [textField resignFirstResponder];
     
     if (textField.returnKeyType == UIReturnKeyNext) {
-        //make next view first responder
-        //[next-text-field becomeFirstResponder];
+        if (_allTextFields == nil) {
+            _allTextFields = [self findAllTextFieldsInView:[self view]];
+        }
+        
+        for (int i=0; i<_allTextFields.count; i++) {
+            UITextField * iTextField = _allTextFields[i];
+            if (textField == iTextField) {
+                if (i+1 == _allTextFields.count) {
+                    [_allTextFields[0] becomeFirstResponder];
+                }else{
+                    [_allTextFields[i+1] becomeFirstResponder];
+                }
+            }
+        }
     }
     
     return YES;
 }
+
+-(NSArray*)findAllTextFieldsInView:(UIView*)view{
+    NSMutableArray* textfieldarray = [[NSMutableArray alloc] init];
+    for(id x in [view subviews]){
+        if([x isKindOfClass:[UITextField class]])
+            [textfieldarray addObject:x];
+        
+        if([x respondsToSelector:@selector(subviews)]){
+            // if it has subviews, loop through those, too
+            [textfieldarray addObjectsFromArray:[self findAllTextFieldsInView:x]];
+        }
+    }
+    return textfieldarray;
+}
+
 
 @end
