@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "QBKeyboardHandler"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "iOS keyboard handler view controller"
 
   s.description  = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "6.0"
   s.source       = { 
     :git => "https://github.com/sakkeerhussain/QBKeyboardHandler.git", 
-    :tag => "0.1"
+    :tag => "0.2"
   }
 
   s.source_files  = "BaseViewController", "BaseViewController/*.{h,m}"
