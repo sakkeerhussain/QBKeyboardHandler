@@ -20,6 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self handleKeyboard];
+    [self setAllTextFieldDelegate];
+}
+
+-(void) setAllTextFieldDelegate {
+    _allTextFields = [self findAllTextFieldsInView:[self view]];
+    
+    for (int i=0; i<_allTextFields.count; i++) {
+        UITextField * iTextField = _allTextFields[i];
+        iTextField.delegate = self;
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
