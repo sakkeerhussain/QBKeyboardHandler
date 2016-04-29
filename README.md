@@ -8,5 +8,9 @@ View Controller which includes basic keyboard handling in iOS.
 * Handles keyboard hides some portion of content issue.
 
 #Usage
-* Extend your base view controller from "QBBaseViewController"
+* Extend your base view controller or view controllers for those this feature requires from "QBBaseViewController" instead on "UIViewCotroller"
+
+@interface ViewController : QBBaseViewController 
+
 * Assign your parents bottom constraint to "bottomMarginConstraint". Keep its value 0 by default.
+
